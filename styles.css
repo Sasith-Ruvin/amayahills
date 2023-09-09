@@ -130,7 +130,6 @@ header.scrolled ul{
     .header li a{
         padding: 45px 15px;
         font-size: clamp(10px,1.5vw,200px);
-    
 
         
     }

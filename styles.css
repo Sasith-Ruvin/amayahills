@@ -1846,7 +1846,7 @@ table {
 .formbody .form-label{
     padding-top: 3%;
     padding-bottom: 3%;
-    font-size: clamp(8px,1.5vw,100px);
+    font-size: clamp(1px,1.8vw,100px);
     font-weight: 800;
     font-family: "Open sans",sans-serif;
 }
@@ -1867,6 +1867,7 @@ table {
 }
 .form-adventures label{
     color: white;
+    font-size: clamp(10px,1.8vw,100px);
 }
 .form-adventures input {
     color: white;

@@ -422,7 +422,8 @@ body{
         flex-wrap: wrap;
     }
     .image-container img{
-        padding-top: 5%;
+        width: 70%;
+        padding-top: 15%;
         transform: perspective(800px) rotateY(0deg);
     }
 }

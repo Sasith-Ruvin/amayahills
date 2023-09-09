@@ -1884,11 +1884,11 @@ table {
     outline: none;
     background: #ffffff;
     color: #000000;
-    font-size: clamp(8px,1.5vw,30px);
+    font-size: clamp(10px,1.8vw,100px);
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border-radius: 10px;
     transition: all 0.3s ease-out;
 }

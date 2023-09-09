@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaya Resorts | Offers</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+      <!--Navigation Bar-->
+      <header class="header">
+        <a href="./index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./restaurant.html">Restaurants</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./accommodation.html">Accommodation</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./resorts.html">Resorts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./book.html">Book Now</a></li>
+        </ul>
+    </header>
+    <!--Offers-->
+    <section class="intro_sub">
+        <img src="./pexels-iván-rivero-1001965 (1).jpg" alt="Image of a restaurant in the hotel">
+        <h1>Offers</h1>
+    </section>
+    <section class="offers">
+        <section class="wrapper">
+            <!--Offer One-->
+            <section class="offer-image">
+                <img src="./honeymoon-offer-2-scaled.webp" alt="Couple at Amaya Hills">
+                <section class="offer-content">
+                    <h1>Honeymoon Offer</h1>
+                    <br><br>
+                    <a href="https://www.amayaresorts.com/amayahills/offers/honeymoon-offer/"><button class="offer_btn">More Info</button></a>
+                </section>
+            </section>
+            <!--Offer Two-->
+            <section class="offer-image">
+                <img src="./Portrait-Size-1.webp" alt="Afternoon High Tea Stand">
+                <section class="offer-content">
+                    <h1>Resident Offer</h1>
+                    <br><br>
+                    <a href="https://www.amayaresorts.com/amayahills/offers/special-resident-offer/"><button class="offer_btn">More Info</button></a>
+                </section>
+            </section>
+            <!--Offer Three-->
+            <section class="offer-image">
+                <img src="./05-Family-Duplex-beach-villa-with-pool-_DSC0360-scaled.webp" alt="Inside of a Family Suite">
+                <section class="offer-content">
+                    <h1>Book Direct Offer</h1>
+                    <br><br>
+                    <a href="https://www.amayaresorts.com/amayahills/offers/book-direct-offer/"><button class="offer_btn">More Info</button></a>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <section class="footer-left">
+          <section class="footer-logo">
+            <img src="./download.png" alt="">
+          </section>
+          <section class="footer-left-text">
+            <h1>Amaya Hills</h1>
+            <br>
+            <p>Heerassagala, Kandy</p>
+            <br>
+            <p>Sri Lanka</p>
+          </section>
+        </section>
+        <section class="footer-icons-container">
+          <section class="footer-icons">
+            <a href="https://www.facebook.com/amayaresorts?_rdc=1&_rdr"><img class="icon" src="./icons8-facebook-50.png" alt="Facebook Icon"></a>
+            <a href="https://www.youtube.com/@AmayaResort"><img class="icon" src="./icons8-youtube-50.png" alt="Youtube Icon"></a>
+            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./Twitter Logo white.png" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com/amayaresort/"><img class="icon" src="./icons8-instagram-50.png" alt="Instagram Icon"></a>
+            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linked in logo white.png" alt="Linkedin Icon"></a>
+          </section>
+        </section>
+        <section class="footer-contacts">
+            <p><a href="mailto:reservations@amayaresorts.com" id="email">reservation@amayaresorts.com</a></p>
+            <br>
+            <p>Phone : +94 81 4 474022</p>
+        </section>
+        <!-- References
+
+            Logo of Amaya Resorts :https://amayaresorts.com/
+            Couple at Amaya Hills :https://amayaresorts.com/amayahills
+            Afternoon High Tea Stand Hotel:https ://amayaresorts.com/
+            Facebook Icon :https://icons8.com/
+            Youtube Icon :https://icons8.com/
+            Instagram Icon :https://icons8.com/
+            Twitter Icon :https://icons8.com/
+            Linkedin Icon :https://icons8.com/
+        -->
+
+      </footer>
+</body>
+<script>
+    document.addEventListener ('scroll', () =>{
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0){
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled')
+        }
+    })
+</script>
+</html>

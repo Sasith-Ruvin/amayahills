@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaya Resorts | Reservations</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./restaurant.html">Restaurants</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./accommodation.html">Accommodation</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./resorts.html">Resorts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./book.html">Book Now</a></li>
+        </ul>
+    </header>
+    <section class="intro_sub">
+        <img src="./pexels-helena-lopes-2017802.webp" alt="Image of Hotel front desk">
+        <h1>Reservation</h1>
+    </section>
+
+    <div class="booking">
+        <div class="book-body">
+            <form action="" class="formbody">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required class="form-input">
+                <label for="contact" class="form-label">Contact</label>
+                <input type="number" name="contact" placeholder="Enter Contact Number" required class="form-input">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" placeholder="Email Address" required class="form-input">
+                <label for="rooms" class="form-label">Room Type</label>
+                <select name="rooms" id="" required>
+                    <option value="">--Select a Room Type--</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Premium Deluxe">Premium Deluxe</option>
+                    <option value="Family Suite">Family Suite</option>
+                </select>
+                <label for="checkin" class="form-label">Check in </label>
+                <input type="date" required name="checkin" class="form-input">
+                <label for="checkout" class="form-label">Check out</label>
+                <input type="date" name="checkout" required class="form-input">
+                <label for="adventures" class="form-label">Adventures</label>
+                <div class="form-adventures">
+                    <input type="radio" name="hike"class="adven">
+                    <label for="hike">Hanthana Hike</label>
+                    <input type="radio" name="gardens">
+                    <label for="gardens">Peradeniya Gardens</label>
+                    <input type="radio" name="Sanctuary">
+                    <label for="Sanctuary">Sanctuary</label>
+                </div>
+                <div class="form-button">
+                    <input type="button" value="Book" class="form-send-button">
+                </div>
+                
+
+            </form>
+        </div>
+        
+    </div>
+
+     <!--Footer-->
+     <footer class="footer">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="./download.png" alt="">
+          </div>
+          <div class="footer-left-text">
+            <h1>Amaya Hills</h1>
+            <br>
+            <p>Heerassagala, Kandy</p>
+            <br>
+            <p>Sri Lanka</p>
+          </div>
+        </div>
+        <div class="footer-icons-container">
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/amayaresorts?_rdc=1&_rdr"><img class="icon" src="./icons8-facebook-50.png" alt="Facebook Icon"></a>
+            <a href="https://www.youtube.com/@AmayaResort"><img class="icon" src="./icons8-youtube-50.png" alt="Youtube Icon"></a>
+            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./Twitter Logo white.png" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com/amayaresort/"><img class="icon" src="./icons8-instagram-50.png" alt="Instagram Icon"></a>
+            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linked in logo white.png" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+        <div class="footer-contacts">
+            <p><a href="mailto:reservations@amayaresorts.com" id="email">reservation@amayaresorts.com</a></p>
+            <br>
+            <p>Phone : +94 81 4 474022</p>
+        </div>
+         <!-- References
+
+            Logo of Amaya Resorts :https://amayaresorts.com/
+            Facebook Icon :https://icons8.com/
+            Youtube Icon :https://icons8.com/
+            Instagram Icon :https://icons8.com/
+            Twitter Icon :https://icons8.com/
+            Linkedin Icon :https://icons8.com/
+        -->
+      </footer>
+    
+</body>
+<script>
+    document.addEventListener ('scroll', () =>{
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0){
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled')
+        }
+    })
+</script>
+</html>

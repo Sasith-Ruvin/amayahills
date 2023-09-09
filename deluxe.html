@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaya Resorts | Accommodation - Deluxe Room</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./restaurant.html">Restaurants</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./accommodation.html">Accommodation</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./resorts.html">Resorts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./book.html">Book Now</a></li>
+        </ul>
+    </header>
+     <!--Accommodation-->
+     <section class="intro_sub">
+        <img src="./pexels-max-rahubovskiy-6782567.webp" alt="Image of a room in the hotel">
+        <h1>Accommodation</h1>
+    </section>
+    <!--Accommodation Information-->
+    <section class="room_heading">
+        <h1>Deluxe Room</h1>
+    </section>
+    <section class="room_image">
+            <img src="./Deluxe-scaled.webp" alt="">
+    </section>
+    <section class="room_txt">
+        <p>A perfect abode in the hills, the Deluxe Rooms are beautifully decorated, offering the finest comforts during your stay. Wake up to jungle views and a multitude of birds and monkeys from your private balcony or garden space. The Deluxe Rooms offer a sense of place and a memorable experience embodying tranquility and Kandyan charm. Experience what the best of Kandy hotels in Sri Lanka has to offer.</p>
+    </section>
+    <section class="room_information">
+        <section class="room_specs">
+            <p>Size:229 Sq.ft</p>
+        </section>
+        <section class="room_specs">
+            <p>Check in:2.00pm</p>
+        </section>
+        <section class="room_specs">
+            <p>Check Out:Noon</p>
+        </section>
+    </section>
+    <section class="room_button">
+        <a href="./book.html"><button class="room_btn">Book Now</button></a>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <section class="footer-left">
+          <section class="footer-logo">
+            <img src="./download.png" alt="">
+          </section>
+          <section class="footer-left-text">
+            <h1>Amaya Hills</h1>
+            <br>
+            <p>Heerassagala, Kandy</p>
+            <br>
+            <p>Sri Lanka</p>
+          </section>
+        </section>
+        <section class="footer-icons-container">
+          <section class="footer-icons">
+            <a href="https://www.facebook.com/amayaresorts?_rdc=1&_rdr"><img class="icon" src="./icons8-facebook-50.png" alt="Facebook Icon"></a>
+            <a href="https://www.youtube.com/@AmayaResort"><img class="icon" src="./icons8-youtube-50.png" alt="Youtube Icon"></a>
+            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./Twitter Logo white.png" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com/amayaresort/"><img class="icon" src="./icons8-instagram-50.png" alt="Instagram Icon"></a>
+            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linked in logo white.png" alt="Linkedin Icon"></a>
+          </section>
+        </section>
+        <section class="footer-contacts">
+            <p><a href="mailto:reservations@amayaresorts.com" id="email">reservation@amayaresorts.com</a></p>
+            <br>
+            <p>Phone : +94 81 4 474022</p>
+        </section>
+        <!-- References
+
+            Logo of Amaya Resorts :https://amayaresorts.com/
+            Image of Deluxe Room :https://amayaresorts.com/amayahills
+            Facebook Icon :https://icons8.com/
+            Youtube Icon :https://icons8.com/
+            Instagram Icon :https://icons8.com/
+            Twitter Icon :https://icons8.com/
+            Linkedin Icon :https://icons8.com/
+        -->
+      </footer>
+    
+</body>
+<script>
+    document.addEventListener ('scroll', () =>{
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0){
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled')
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaya Resorts | Accommodation</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header class="header">
+        <a href="./index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./restaurant.html">Restaurants</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./accommodation.html">Accommodation</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./resorts.html">Resorts</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./book.html">Book Now</a></li>
+        </ul>
+    </header>
+     <!--Accommodation-->
+     <section class="intro_sub">
+        <img src="./pexels-max-rahubovskiy-6782567.webp" alt="Inside of a room in the hotel">
+        <h1>Accommodation</h1>
+    </section>
+    <!--Main Paragraph-->
+    <section class="accom_main_para">
+        <p>Discover Amaya Hills, one of the finest Kandy hotels boasting 104 luxurious rooms and suites, all beautifully decorated, with sweeping views of the Hanthana mountain range and perfectly manicured gardens adorning opulent flora all year round.</p>
+    </section>
+     <!--Accommodation Card Holder-->
+     <section class="accommodation">
+        <!--Accommodation Type one-->
+        <section class="accom_card">
+            <img src="./Deluxe-scaled.webp" class="deluxe" alt="Image of Deluxe Room">
+            <section class="accom_card_text">
+                <h1 class="title_room">Deluxe Room</h1>
+                <p class="info_room">PROVIDING THE BEST IN PRIVACY AND COMFORT, LULLED BY THE SOUNDS OF NATURE</p>
+                <a href="./deluxe.html"><button class="accom_btn">More Info</button></a>
+            </section>
+        </section>
+        <!--Accommodation Type Two-->
+        <section class="accom_card">
+            <img src="./Junior-Mountain-View-Suites-scaled.webp" class="deluxe" alt="Image of Premium Deluxe room">
+            <section class="accom_card_text">
+                <h1 class="title_room">Premium Deluxe</h1>
+                <p class="info_room">WHERE MODERN LIVING MEETS RICH CULTURAL INFLUENCES WHILE PROVIDING A PEACEFUL RETREAT.</p>
+                <a href="./premium.html"><button class="accom_btn">More Info</button></a>
+            </section>
+        </section>
+        <!--Accommodation Type Three-->
+        <section class="accom_card">
+            <img src="./Family-Mountain-View-Suites-scaled.webp" class="deluxe" alt="Inside of a Family Suite room">
+            <section class="accom_card_text">
+                <h1 class="title_room">Family Suite</h1>
+                <p class="info_room">HE EPITOME OF GRANDEUR, THESE STYLISH FAMILY MOUNTAIN VIEW SUITES ARE IDEAL FOR THOSE WHO VALUE RICH INDULGENCES</p>
+                <a href="./family.html"><button class="accom_btn">More Info</button></a>
+            </section>
+        </section>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <section class="footer-left">
+          <section class="footer-logo">
+            <img src="./download.png" alt="">
+          </section>
+          <section class="footer-left-text">
+            <h1>Amaya Hills</h1>
+            <br>
+            <p>Heerassagala, Kandy</p>
+            <br>
+            <p>Sri Lanka</p>
+          </section>
+        </section>
+        <section class="footer-icons-container">
+          <section class="footer-icons">
+            <a href="https://www.facebook.com/amayaresorts?_rdc=1&_rdr"><img class="icon" src="./icons8-facebook-50.png" alt="Facebook Icon"></a>
+            <a href="https://www.youtube.com/@AmayaResort"><img class="icon" src="./icons8-youtube-50.png" alt="Youtube Icon"></a>
+            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./Twitter Logo white.png" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com/amayaresort/"><img class="icon" src="./icons8-instagram-50.png" alt="Instagram Icon"></a>
+            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linked in logo white.png" alt="Linkedin Icon"></a>
+          </section>
+        </section>
+        <section class="footer-contacts">
+            <p><a href="mailto:reservations@amayaresorts.com" id="email">reservation@amayaresorts.com</a></p>
+            <br>
+            <p>Phone : +94 81 4 474022</p>
+        </section>
+        <!-- References
+
+            Logo of Amaya Resorts :https://amayaresorts.com/
+            Image of Deluxe Room :https://amayaresorts.com/amayahills
+            Image of Premium Deluxe room ://amayaresorts.com/
+            Inside of a Family Suite room ://amayaresorts.com/
+            Facebook Icon :https://icons8.com/
+            Youtube Icon :https://icons8.com/
+            Instagram Icon :https://icons8.com/
+            Twitter Icon :https://icons8.com/
+            Linkedin Icon :https://icons8.com/
+        -->
+      </footer>
+</body>
+<script>
+    document.addEventListener ('scroll', () =>{
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 0){
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled')
+        }
+    })
+</script>
+</html>

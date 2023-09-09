@@ -182,7 +182,7 @@ header.scrolled{
     height: 20px;
     list-style: none;
     opacity: 0;
-    background: radial-gradient(rgb(255, 238, 0),rgba(255, 217, 0, 0.281),transparent,transparent);
+    background: radial-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.363),transparent,transparent);
     bottom: 0;
     left: 10vw;
     animation: back 15s linear infinite;

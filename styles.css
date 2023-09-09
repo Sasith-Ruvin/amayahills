@@ -25,7 +25,7 @@ header.scrolled{
     opacity: 0.98em;
 }
 .header ul{
-    margin: 20 0 0 0;
+    margin: 0 0 0 0;
     padding: 0;
     list-style: none;
     overflow: auto;

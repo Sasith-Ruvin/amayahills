@@ -799,14 +799,14 @@ footer {
 
 @keyframes image{
     25%{
-        transform: translateX(30px);
+        transform: translateX(10px);
         animation-delay: 2s;
     }
     50%{
         transform: translateX(0);
     }
     75%{
-        transform: translateX(-30px);
+        transform: translateX(-10px);
         animation-delay: 2s;
     }
     100%{

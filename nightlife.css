@@ -150,6 +150,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .content h1{
     font-size: clamp(30px,6vw,300px);

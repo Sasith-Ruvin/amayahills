@@ -364,13 +364,13 @@ header.scrolled ul{
     padding: 20px;
 }
 .card-content h1{
-    font-size: 3vw;
+    font-size: clamp(15px,3vw,200px);
     margin-bottom: 10px;
     color: #fff;
     font-family: "Open sans",sans-serif;
 }
 .card-content p{
-    font-size: 1.5vw;
+    font-size: clamp(10px,1.5vw,200px);
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     text-align: center;
@@ -385,6 +385,8 @@ header.scrolled ul{
     color: black;
     font-size: 1.5vw;
     transition: all 0.2s ease-out;
+    font-size: clamp(10px,1.5vw,200px);
+    font-family: "Philosopher",sans-serif;
 }
 .card-button:hover{
     background-color: gold;

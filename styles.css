@@ -130,12 +130,15 @@ header.scrolled ul{
     .header li a{
         padding: 40px 15px;
         font-size: clamp(10px,1.5vw,200px);
+        overflow: hidden;
+
         
     }
     .header .menu{
         clear: none;
         float: right;
         max-height: none;
+        overflow: hidden;
     }
     .header .menu-icon{
         display: none;

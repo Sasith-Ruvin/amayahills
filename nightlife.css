@@ -277,7 +277,7 @@ body{
 }
 .night-event-name h4{
     width: 80%;
-    font-size: clamp(15px,4vw,80px);
+    font-size: clamp(20px,4vw,80px);
     font-family: "Philosopher",sans-serif;
     color: rgb(193, 246, 253);
     text-shadow:  0 0 0 transparent,

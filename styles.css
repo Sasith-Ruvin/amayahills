@@ -190,14 +190,22 @@ header.scrolled ul{
         top: 20%;
     }
 }
-@media (max-width:600px){
+@media (max-width:650px){
     .intro h1{
         top: 30%;
     }
 }
-@media (max-width:420px){
+@media (max-width:500px){
     .intro h1{
         top: 40%;
+    }
+    .intro h2{
+        top: 70%;
+    }
+}
+@media (max-width:450px){
+    .intro h1{
+        top: 50%;
     }
     .intro h2{
         top: 80%;

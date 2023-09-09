@@ -25,9 +25,8 @@ header.scrolled{
     opacity: 0.98em;
 }
 .header ul{
-    margin: 0;
+    margin: 20 0 0 0;
     padding: 0;
-    height: 114px;
     list-style: none;
     overflow: auto;
     transition: all 0.2s ease-out;
@@ -126,9 +125,10 @@ header.scrolled ul{
 @media (min-width:1200px){
     .header li{
         float: left;
+
     }
     .header li a{
-        padding: 45px 15px;
+        padding: 40px 15px;
         font-size: clamp(10px,1.5vw,200px);
         
     }

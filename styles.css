@@ -1823,7 +1823,7 @@ table {
 
 
 
-.booking{
+.booking-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1832,104 +1832,146 @@ table {
     align-items: center;
     padding-top: 5%;
 }
-.book-body{
+.booking-container-body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
-    border: 2px solid black;
-    background-color: #000000;
-    border-radius: 15px;
+    padding: 2%;
+    width: 60%;
+    border: black 2px solid;
+    background: rgb(0, 0, 0);
 }
-.formbody{
+.form-body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+}
+.form-body .name-and-contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 2%;
-    row-gap: 5%;
-    color: white;
 }
-.formbody .form-label{
+.form-body .name-and-contact .name{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 49%;
+}
+.form-body .name-and-contact .contact-number{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 49%;
+
+}
+.form-selection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+}
+.event-selection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+
+}
+.adventures-and-events-rooms{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10%;
+}
+.form-adventures-events-rooms{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    
+}
+.form-adventures-events-rooms{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+}
+.form-body input{
+    padding: 15px 15px;
+}
+.form-body select{
+    padding: 15px 15px;
+}
+.form-body .form-label{
     padding-top: 3%;
     padding-bottom: 3%;
-    font-size: clamp(1px,1.8vw,100px);
-    font-weight: 800;
+    font-size: clamp(15px,1.5vw,100px);
+    color: white;
     font-family: "Open sans",sans-serif;
 }
-.formbody .form-input{
-    padding: 10px 15px;
-    border-radius: 15px;
-}
-.formbody select{
-    padding: 10px 10px;
-    border-radius: 15px;
-}
-.formbody .form-adventures{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2%;
-    width: 100%;
-}
-.form-adventures label{
-    color: white;
-    font-size: clamp(10px,1.8vw,100px);
-}
-.form-adventures input {
-    color: white;
-}
-.formbody .form-button{
+.send-button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-top: 5%;
+    
 }
-.form-button .form-send-button{
+.send-button .form-send-button{
     border: none;
     outline: none;
     background: #ffffff;
     color: #000000;
-    font-size: clamp(10px,1.8vw,100px);
+    font-size: clamp(8px,1.5vw,30px);
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
     transition: all 0.3s ease-out;
+    border: #000 solid 0.1rem;
+    transition: all .3s ease-out;
 }
 .form-send-button:hover{
     background: darkgoldenrod;
-    color: whitesmoke;
+    color: white;
+    
 }
+
 /*Booking Page Responsiveness*/
 
-
 @media (max-width:800px){
-    .booking{
+    .booking-container{
         flex-direction: column;
     }
-    .book-body{
-        width: 80%;
-    }
-    .formbody{
+    .form-body .name-and-contact{
         flex-direction: column;
     }
-}
-@media (max-width:400px){
-    .book-body{
-        width: 80%;
+    .form-body .name-and-contact .name{
+        width: 95%;
     }
-}
-@media (max-width:750px){
-    .form-adventures{
+    .form-body .name .contact-number{
+        width: 95%;
+    }
+    .email{
+        width: 85%;
+    }
+    .adventures-and-events-rooms{
         flex-direction: column;
     }
+    .form-adventures-events-rooms{
+        width: 95%;
+    }
+    .form-adventures-events-rooms{
+        width: 95%;
+    }
 }
-
 
 
 

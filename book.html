@@ -37,45 +37,85 @@
         <h1>Reservation</h1>
     </section>
 
-    <section class="booking">
-        <section class="book-body">
-            <form action="" class="formbody">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" name="name" placeholder="Enter your name" required class="form-input">
-                <label for="contact" class="form-label">Contact</label>
-                <input type="number" name="contact" placeholder="Enter Contact Number" required class="form-input">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" placeholder="Email Address" required class="form-input">
-                <label for="rooms" class="form-label">Room Type</label>
-                <select name="rooms" id="" required>
-                    <option value="">--Select a Room Type--</option>
-                    <option value="Deluxe Room">Deluxe Room</option>
-                    <option value="Premium Deluxe">Premium Deluxe</option>
-                    <option value="Family Suite">Family Suite</option>
-                </select>
-                <label for="checkin" class="form-label">Check in </label>
-                <input type="date" required name="checkin" class="form-input">
-                <label for="checkout" class="form-label">Check out</label>
-                <input type="date" name="checkout" required class="form-input">
-                <label for="adventures" class="form-label">Adventures</label>
-                <section class="form-adventures">
-                    <input type="radio" name="hike"class="adven">
-                    <label for="hike">Hanthana Hike</label>
-                    <input type="radio" name="gardens">
-                    <label for="gardens">Gardens</label>
-                    <input type="radio" name="Sanctuary">
-                    <label for="Sanctuary">Sanctuary</label>
+    <!--Booking Form-->
+    <section class="booking-container">
+        <section class="booking-container-body">
+            <form action="" class="form-body">
+                <!--Enter Name and Contact Number-->
+                <section class="name-and-contact">
+                    <section class="name">
+                        <label for="yourname" class="form-label">Name</label>
+                        <input type="text" name="yourname" placeholder="Enter Your Name" required>
+                    </section>
+                    <section class="contact-number">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="number" name="contact" placeholder="Enter your Contact Number" required>
+                    </section>
                 </section>
-                <section class="form-button">
-                    <input type="button" value="Book Now" class="form-send-button">
+                <!--Email Address-->
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" class="email" placeholder="Enter your Email" required>
+
+                <!--Adventures, Rooms and Event Booking-->
+
+                <section class="adventures-and-events-rooms">
+                    <!--Adventure Booking-->
+                    <section class="form-adventures-events-rooms">
+                        <label for="adventures" class="form-label">Experiences</label>
+                        <select name="adventures" id="">
+                            <option value="hanthana">Hanthana Hike</option>
+                            <option value="Gardens">Peradeniya Gardens</option>
+                            <option value="Sanctuary">Udawattakele Sanctuary</option>
+                        </select>
+                    </section>
+                    <!--Event Booking-->
+                    <section class="form-adventures-events-rooms">
+                        <label for="events" class="form-label">Events</label>
+                        <select name="events" id="">
+                            <option value="weddngs">Weddings</option>
+                            <option value="live">Live Music</option>
+                            <option value="candle">Candlelit Dinners</option>
+                        </select>
+                    </section>
                 </section>
-                
+                <!--Room Booking-->
+                <section class="adventures-and-events-rooms">
+                    <section class="form-adventures-events-rooms">
+                        <label for="room" class="form-label">Type of Room</label>
+                        <select name="room" id="">
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="premium">Premium Deluxe</option>
+                            <option value="family">Family Suite</option>
+                        </select>
+                    </section>
+                    <section class="form-adventures-events-rooms">
+                        <label for="number" class="form-label">Number of Rooms</label>
+                        <input type="number" name="number">
+                    </section>
+                </section>
+
+                <!--Check In and Check Out-->
+
+                <section class="adventures-and-events-rooms">
+                    <section class="form-adventures-events-rooms">
+                        <label for="checkin" class="form-label">Check In</label>
+                        <input type="date" name="checkin" id="">
+                    </section>
+                    <section class="form-adventures-events-rooms">
+                        <label for="checkout" class="form-label">Check Out</label>
+                        <input type="date" name="checkout">
+                    </section>
+                </section>
+
+                <!--Send Button-->
+
+                <section class="send-button">
+                    <input type="submit" value="Book Now" class="form-send-button">
+                </section>
 
             </form>
         </section>
-        
     </section>
-
      <!--Footer-->
      <footer class="footer">
         <section class="footer-left">

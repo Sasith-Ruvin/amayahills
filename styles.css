@@ -1139,13 +1139,13 @@ table {
 
 .title_room{
     text-transform: uppercase;
-    font-size: clamp(15px,2.8vw,100px);
+    font-size: clamp(35px,2.8vw,100px);
     font-weight: 900;
     font-family: "Philosopher",sans-serif;
 }
 .info_room{
     text-transform: capitalize;
-    font-size: clamp(15px, 1.8vw,70px);
+    font-size: clamp(30px, 1.8vw,70px);
     margin-top: 10%;
     font-family: "Open sans",sans-serif;
     font-weight: 900;
@@ -1160,7 +1160,7 @@ table {
     border: none;
     cursor: pointer;
     margin-top: 5%;
-    font-size: clamp(15px, 1.5vw,70px);
+    font-size: clamp(30px, 1.5vw,70px);
     font-weight: bold;
 }
 
@@ -1207,7 +1207,7 @@ table {
     text-align: center;
     color: black;
     font-family: "Philosopher",sans-serif;
-    font-size: clamp(25px,3vw,100px);
+    font-size: clamp(35px,3vw,100px);
     padding-top: 2%;
     -webkit-text-stroke: 0.2px white;
     background-color: #ffe8e8b7;
@@ -1233,7 +1233,7 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     font-family: "Open sans",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(30px,2.2vw,90px);
     padding-top: 8%;
     background-color: #ffe8e8b7;
 }
@@ -1259,7 +1259,7 @@ table {
 .room_specs{
     width: 30%;
     font-family: "Open sans",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(30px,2.2vw,90px);
     padding-top: 2%;
     
     color: #000000;
@@ -1280,7 +1280,7 @@ table {
     background: #000000;
     color: #fff;
     font-family: "Philosopher",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(30px,2.2vw,90px);
     padding: 10px 20px;
     font-weight: bold;
     transition: all .3s ease-out;

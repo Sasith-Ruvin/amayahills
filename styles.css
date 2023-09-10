@@ -1139,13 +1139,13 @@ table {
 
 .title_room{
     text-transform: uppercase;
-    font-size: clamp(20px,2.8vw,100px);
+    font-size: clamp(10px,2.8vw,100px);
     font-weight: 900;
     font-family: "Philosopher",sans-serif;
 }
 .info_room{
     text-transform: capitalize;
-    font-size: clamp(20px, 1.8vw,70px);
+    font-size: clamp(10px, 1.8vw,70px);
     margin-top: 10%;
     font-family: "Open sans",sans-serif;
     font-weight: 900;
@@ -1160,7 +1160,7 @@ table {
     border: none;
     cursor: pointer;
     margin-top: 5%;
-    font-size: clamp(20px, 1.5vw,70px);
+    font-size: clamp(10px, 1.5vw,70px);
     font-weight: bold;
 }
 

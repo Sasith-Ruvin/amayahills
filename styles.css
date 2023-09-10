@@ -1233,7 +1233,7 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     font-family: "Open sans",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(15px,2.2vw,90px);
     padding-top: 8%;
     background-color: #ffe8e8b7;
 }
@@ -1259,7 +1259,7 @@ table {
 .room_specs{
     width: 30%;
     font-family: "Open sans",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(15px,2.2vw,90px);
     padding-top: 2%;
     
     color: #000000;
@@ -1280,7 +1280,7 @@ table {
     background: #000000;
     color: #fff;
     font-family: "Philosopher",sans-serif;
-    font-size: clamp(20px,2.2vw,90px);
+    font-size: clamp(15px,2.2vw,90px);
     padding: 10px 20px;
     font-weight: bold;
     transition: all .3s ease-out;

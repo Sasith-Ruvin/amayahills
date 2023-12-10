@@ -29,7 +29,7 @@
                 <li><a href="./resorts.html">Resorts</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./book.html">Book Now</a></li>
+                <li><a href="https://sasith-ruvin.github.io/reservations/book.html">Book Now</a></li>
         </ul>
     </header>
     <section class="intro_sub">
@@ -39,82 +39,264 @@
 
     <!--Booking Form-->
     <section class="booking-container">
-        <section class="booking-container-body">
-            <form action="" class="form-body">
-                <!--Enter Name and Contact Number-->
-                <section class="name-and-contact">
-                    <section class="name">
-                        <label for="yourname" class="form-label">Name</label>
-                        <input type="text" name="yourname" placeholder="Enter Your Name" required>
-                    </section>
-                    <section class="contact-number">
-                        <label for="contact" class="form-label">Contact Number</label>
-                        <input type="number" name="contact" placeholder="Enter your Contact Number" required>
-                    </section>
-                </section>
-                <!--Email Address-->
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" name="email" class="email" placeholder="Enter your Email" required>
+        <!-- Room Booking Form -->
+        <div class="room-booking-form">
+            <div class="favourite-loyalty-button">
+                <button type="submit" id="favourite"><img src="./icons8-favourite-50 (2).png" alt="" id="favouriteicon"></button>
+                <button type="button" id="loyalty">Loyalty</button>
+            </div>
+            <form action="" id="booking_form">
+                <div class="form-heading">Room Bookings</div>
+                <div class="detail-input">
+                    <div class="user-input-fields">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your First Name." required>
+                    </div> 
+                    <div class="user-input-fields">
+                        <label for="name">Last Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Last Name." required>
+                    </div> 
+                </div>
+                <div class="detail-input">
+                    <div class="user-input-fields">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Enter a valid telephone Number"  placeholder="Enter your phone number" required/>
+                    </div>
+                    <div class="user-input-fields">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                </div>
 
-                <!--Adventures, Rooms and Event Booking-->
+                <div class="room-detail-input">
+                    <div class="room-input">
+                        <label for="single">Single Rooms</label>
+                        <input type="number" name="rooms" id="single" placeholder="Enter Number of Single Rooms required">
+                    </div>
+                    <div class="room-input">
+                        <label for="double">Double Rooms</label>
+                        <input type="number" name="rooms" id="double" placeholder="Enter Number of Double Rooms required">
+                    </div>
+                    <div class="room-input">
+                        <label for="triple">Triple Rooms</label>
+                        <input type="number" name="rooms" id="triple" placeholder="Enter Number of Triple Rooms required">
+                    </div>
+                </div>
 
-                <section class="adventures-and-events-rooms">
-                    <!--Adventure Booking-->
-                    <section class="form-adventures-events-rooms">
-                        <label for="adventures" class="form-label">Experiences</label>
-                        <select name="adventures" id="">
-                            <option value="hanthana">Hanthana Hike</option>
-                            <option value="Gardens">Peradeniya Gardens</option>
-                            <option value="Sanctuary">Udawattakele Sanctuary</option>
+                <div class="detail-input">
+                    <div class="user-input-fields">
+                        <label for="checkin">Check in</label>
+                        <input type="date" name="checkings" id="checkin" required>
+                    </div>
+                    <div class="user-input-fields">
+                        <label for="checkout">Check Out</label>
+                        <input type="date" name="checkings" id="checkout" required>
+                    </div>
+                </div>
+
+                <h2>Extra Requirements</h2>
+                <div class="extra-requirements">
+                    <div class="extra-requirements-checkboxes">
+                        <input type="checkbox" name="extra" id="wifi">
+                        <div class="extra-req-text">
+                            <span>
+                                WiFi
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="extra-requirements-checkboxes">
+                        <input type="checkbox" name="extra" id="pet">
+                        <div class="extra-req-text">
+                            <span>
+                                Pet Accommodation
+                            </span>
+                        </div>
+    
+                    </div>
+
+                    <div class="extra-requirements-checkboxes">
+                        <input type="checkbox" name="extra" id="assistance">
+                        <div class="extra-req-text">
+                            <span>
+                                Concierge Assistance
+                            </span>
+                        </div>
+    
+                    </div>
+
+                    <div class="extra-requirements-checkboxes">
+                        <input type="checkbox" name="extra" id="ac">
+                        <div class="extra-req-text">
+                            <span>
+                                A/C
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="extra-requirements-checkboxes">
+                        <input type="checkbox" name="extra" id="welocme">
+                        <div class="extra-req-text">
+                            <span>
+                                Welcome Amenities
+                            </span>
+                        </div>
+    
+                    </div>   
+                </div>
+
+                <div class="detail-input">
+                    <div class="user-input-fields">
+                        <label for="beds">Extra Beds</label>
+                        <select name="beds" id="beds" >
+                            <option value="default">--Select a Number if needed--</option>
+                            <option value="one">1</option>
+                            <option value="one">2</option>
+                            <option value="one">3</option>
+                            <option value="one">4</option>
+                            <option value="one">5</option>
+
                         </select>
-                    </section>
-                    <!--Event Booking-->
-                    <section class="form-adventures-events-rooms">
-                        <label for="events" class="form-label">Events</label>
-                        <select name="events" id="">
-                            <option value="weddngs">Weddings</option>
-                            <option value="live">Live Music</option>
-                            <option value="candle">Candlelit Dinners</option>
-                        </select>
-                    </section>
-                </section>
-                <!--Room Booking-->
-                <section class="adventures-and-events-rooms">
-                    <section class="form-adventures-events-rooms">
-                        <label for="room" class="form-label">Type of Room</label>
-                        <select name="room" id="">
-                            <option value="deluxe">Deluxe Room</option>
-                            <option value="premium">Premium Deluxe</option>
-                            <option value="family">Family Suite</option>
-                        </select>
-                    </section>
-                    <section class="form-adventures-events-rooms">
-                        <label for="number" class="form-label">Number of Rooms</label>
-                        <input type="number" name="number">
-                    </section>
-                </section>
+                    </div>
+                    <div class="user-input-fields">
+                        <label for="kids">Number of Kids above age 5</label>
+                        <input type="number" name="kids" id="kids" placeholder="Enter Number of Kids above 5">
+                    </div>
+                </div>
 
-                <!--Check In and Check Out-->
 
-                <section class="adventures-and-events-rooms">
-                    <section class="form-adventures-events-rooms">
-                        <label for="checkin" class="form-label">Check In</label>
-                        <input type="date" name="checkin" id="">
-                    </section>
-                    <section class="form-adventures-events-rooms">
-                        <label for="checkout" class="form-label">Check Out</label>
-                        <input type="date" name="checkout">
-                    </section>
-                </section>
+                <div class="promo-code">
+                    <label for="Promo">Promo Code</label>
+                    <input type="text" name="promo" id="promo" placeholder="Enter Promo-Code">
+                </div>
 
-                <!--Send Button-->
+                <div class="book-room-button">
+                    <button type="submit" id="bookrooms">Book Now</button>
+                </div>
 
-                <section class="send-button">
-                    <input type="submit" value="Book Now" class="form-send-button">
-                </section>
+                <div class="current-booking">
+                    <h1>Current Booking</h1>
+                    <p>Number of Single Rooms</p>
+                    <p>Number of Double Rooms</p>
+                    <p>Number of Triple Rooms</p>
+                    <p>Extra Requirements</p>
+                    <p>Extra Beds</p>
+                    <p>Number of Kids</p>
+                </div>
 
+                <div class="current-booking">
+                    <p>Booking Cost</p>
+                </div>
             </form>
-        </section>
+
+            <!-- Adventure Booking Form -->
+            <form action="" id="adventure-form">
+                <div class="form-heading">Adventure Bookings</div>
+
+                <div class="adventure-input">
+                    <div class="person-input">
+                        <label for="localadult">No.of Local Adults</label>
+                        <input type="number" name="localadult" id="localad" placeholder="Enter No.of Local Adults">
+                    </div>
+                    <div class="person-input">
+                        <label for="localkids">No.of Local Children</label>
+                        <input type="number" name="localkids" id="localk" placeholder="Enter No.of Local Kids">
+                    </div>
+                    <div class="person-input">
+                        <label for="foreignadult">No.of Foreign Adults</label>
+                        <input type="number" name="foreignadult" id="foreignad" placeholder="Enter No.of Foreign Adults">
+                    </div>
+                    <div class="person-input">
+                        <label for="foreignkids">No.of Local Children</label>
+                        <input type="number" name="foreignkids" id="foreignk" placeholder="Enter No.of Foreign Kids">
+                    </div>
+                </div>
+
+                <div class="duration">
+                        <label for="hours">Duration</label>
+                        <input type="number" name="hours" id="duration" placeholder="Enter Duration in Hours">
+                </div>
+
+                <h2>Guide Requirements</h2>
+                <div class="guide-requirements">
+                    <div class="guide-requirements-checkboxes">
+                        <input type="checkbox" name="guide" id="adult">
+                        <div class="guide-req-text">
+                            <span>
+                                Adult Guides
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="guide-requirements-checkboxes">
+                        <input type="checkbox" name="guide" id="kidguide">
+                        <div class="guide-req-text">
+                            <span>
+                                Kid's Guide
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-room-button">
+                    <button type="submit" id="bookrooms">Book Adventure</button>
+                </div>
+                <div class="current-booking">
+                    <h1>Current Booking</h1>
+                    <p>Number of Local Adults/p>
+                    <p>Number of Local Kids</p>
+                    <p>Number of Foreign Adults</p>
+                    <p>Number of Foreign Kids</p>
+                    <p>Duration</p>
+                    <p>Guides</p>
+                </div>
+
+
+                <div class="book-room-button">
+                    <button type="submit" id="bookrooms">Reserve</button>
+                </div>
+            </form>
+
+        <div class="overallbooking">
+        <h2>Overall Room Booking:</h2>
+        <table id="overallRoomBooking">
+            <thead>
+                <tr>
+                    <th>Single Rooms</th>
+                    <th>Double Rooms</th>
+                    <th>Check-in Date</th>
+                    <th>Check-out-Date</th>
+                    <th>No.of Kids</th>
+                    <th>Extra Beds</th>
+                    <th>Extra Requirements</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+         </table>
+        </div>
+
+        <div class="overallbooking">
+            <h2>Overall Room Booking:</h2>
+            <table id="overallAdventureBooking">
+                <thead>
+                    <tr>
+                        <th>Local Adults</th>
+                        <th>Local Kids</th>
+                        <th>Foreign Adults</th>
+                        <th>Foreign Kids</th>
+                        <th>Duration</th>
+                        <th>Adult Guide</th>
+                        <th>Kid's Guide</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+             </table>
+            </div>
+        
+        </div>
+        
     </section>
      <!--Footer-->
      <footer class="footer">

@@ -16,313 +16,360 @@
 <body>
     <!--Navigation Bar-->
     <header class="header">
-        <a href="./index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
+        <a href="https://sasith-ruvin.github.io/amayahills/index.html" class="logo"><img src="./download.png" alt="Logo of Amaya Resorts"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <ul class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./offers.html">Offers</a></li>
-                <li><a href="./restaurant.html">Restaurants</a></li>
-                <li><a href="./events.html">Events</a></li>
-                <li><a href="./accommodation.html">Accommodation</a></li>
-                <li><a href="./adventures.html">Adventures</a></li>
-                <li><a href="./resorts.html">Resorts</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://sasith-ruvin.github.io/reservations/book.html">Book Now</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/index.html">Home</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/offers.html">Offers</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/restaurant.html">Restaurants</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/events.html">Events</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/accommodation.html">Accommodation</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/adventures.html">Adventures</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/resorts.html">Resorts</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/gallery.html">Gallery</a></li>
+                <li><a href="https://sasith-ruvin.github.io/amayahills/contact.html">Contact</a></li>
+                <li><a href="./book.html">Book Now</a></li>
         </ul>
     </header>
-    <section class="intro_sub">
+    <section class="intro_sub" aria-label="intro_sub">
         <img src="./pexels-helena-lopes-2017802.webp" alt="Image of Hotel front desk">
         <h1>Reservation</h1>
     </section>
 
-    <!--Booking Form-->
-    <section class="booking-container">
-        <!-- Room Booking Form -->
-        <div class="room-booking-form">
-            <div class="favourite-loyalty-button">
-                <button type="submit" id="favourite"><img src="./icons8-favourite-50 (2).png" alt="" id="favouriteicon"></button>
-                <button type="button" id="loyalty">Loyalty</button>
-            </div>
-            <form action="" id="booking_form">
-                <div class="form-heading">Room Bookings</div>
-                <div class="detail-input">
-                    <div class="user-input-fields">
-                        <label for="name">First Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your First Name." required>
-                    </div> 
-                    <div class="user-input-fields">
-                        <label for="name">Last Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your Last Name." required>
-                    </div> 
-                </div>
-                <div class="detail-input">
-                    <div class="user-input-fields">
-                        <label for="contact">Contact Number</label>
-                        <input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Enter a valid telephone Number"  placeholder="Enter your phone number" required/>
-                    </div>
-                    <div class="user-input-fields">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-                    </div>
-                </div>
+    <section id="form-container" aria-label="form-container">
+      <section class="personal-details" aria-label="personal-details">
+        <form action="#" id="personal-details-form">
+          <section class="detail-input" aria-label="detail-input">
+  
+            <section class="input-field" aria-label="input-field">
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstrname" id="firstname" required placeholder="Enter your first name">
+            </section>
+            <section class="input-field" aria-label="input-field">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" required placeholder="Enter your last name">
+            </section>
+  
+          </section>
+  
+          <section class="detail-input" aria-label="detail-input">
+  
+            <section class="input-field" aria-label="input-field">
+              <label for="contact">Contact</label>
+              <input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Enter a valid telephone Number"  placeholder="Enter your phone number  ex:(000-000-0000)" required>
+            </section>
+  
+            <section class="input-field" aria-label="input-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </section>
+            
+          </section>
+        </form>
+  
+        <section class="favourite-loyalty-button" aria-label="favourite-loyalty-button">
+          <button type="button" id="loyalty">Loyalty</button>
+       </section>
+        
+       
+      </section>
 
-                <div class="room-detail-input">
-                    <div class="room-input">
-                        <label for="single">Single Rooms</label>
-                        <input type="number" name="rooms" id="single" placeholder="Enter Number of Single Rooms required">
-                    </div>
-                    <div class="room-input">
-                        <label for="double">Double Rooms</label>
-                        <input type="number" name="rooms" id="double" placeholder="Enter Number of Double Rooms required">
-                    </div>
-                    <div class="room-input">
-                        <label for="triple">Triple Rooms</label>
-                        <input type="number" name="rooms" id="triple" placeholder="Enter Number of Triple Rooms required">
-                    </div>
-                </div>
-
-                <div class="detail-input">
-                    <div class="user-input-fields">
-                        <label for="checkin">Check in</label>
-                        <input type="date" name="checkings" id="checkin" required>
-                    </div>
-                    <div class="user-input-fields">
-                        <label for="checkout">Check Out</label>
-                        <input type="date" name="checkings" id="checkout" required>
-                    </div>
-                </div>
-
-                <h2>Extra Requirements</h2>
-                <div class="extra-requirements">
-                    <div class="extra-requirements-checkboxes">
-                        <input type="checkbox" name="extra" id="wifi">
-                        <div class="extra-req-text">
-                            <span>
-                                WiFi
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="extra-requirements-checkboxes">
-                        <input type="checkbox" name="extra" id="pet">
-                        <div class="extra-req-text">
-                            <span>
-                                Pet Accommodation
-                            </span>
-                        </div>
-    
-                    </div>
-
-                    <div class="extra-requirements-checkboxes">
-                        <input type="checkbox" name="extra" id="assistance">
-                        <div class="extra-req-text">
-                            <span>
-                                Concierge Assistance
-                            </span>
-                        </div>
-    
-                    </div>
-
-                    <div class="extra-requirements-checkboxes">
-                        <input type="checkbox" name="extra" id="ac">
-                        <div class="extra-req-text">
-                            <span>
-                                A/C
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="extra-requirements-checkboxes">
-                        <input type="checkbox" name="extra" id="welocme">
-                        <div class="extra-req-text">
-                            <span>
-                                Welcome Amenities
-                            </span>
-                        </div>
-    
-                    </div>   
-                </div>
-
-                <div class="detail-input">
-                    <div class="user-input-fields">
-                        <label for="beds">Extra Beds</label>
-                        <select name="beds" id="beds" >
-                            <option value="default">--Select a Number if needed--</option>
-                            <option value="one">1</option>
-                            <option value="one">2</option>
-                            <option value="one">3</option>
-                            <option value="one">4</option>
-                            <option value="one">5</option>
-
-                        </select>
-                    </div>
-                    <div class="user-input-fields">
-                        <label for="kids">Number of Kids above age 5</label>
-                        <input type="number" name="kids" id="kids" placeholder="Enter Number of Kids above 5">
-                    </div>
-                </div>
-
-
-                <div class="promo-code">
-                    <label for="Promo">Promo Code</label>
-                    <input type="text" name="promo" id="promo" placeholder="Enter Promo-Code">
-                </div>
-
-                <div class="book-room-button">
-                    <button type="submit" id="bookrooms">Book Now</button>
-                </div>
-
-                <div class="current-booking">
-                    <h1>Current Booking</h1>
-                    <p>Number of Single Rooms</p>
-                    <p>Number of Double Rooms</p>
-                    <p>Number of Triple Rooms</p>
-                    <p>Extra Requirements</p>
-                    <p>Extra Beds</p>
-                    <p>Number of Kids</p>
-                </div>
-
-                <div class="current-booking">
-                    <p>Booking Cost</p>
-                </div>
+  
+      
+      <!-- Room Booking Form -->
+      
+        <section id="room-booking" aria-label="room-booking">
+          <section class="room-booking-form-container" aria-label="room-booking-form-container">
+            <form action="#" id="room-bookingform">
+              <h2>Room Booking</h2>
+              <section class="favourite-load-button" aria-label="favourite-load-button">
+                <button type="submit" id="favourite"><img src="./icons8-favourite-50.png" alt="icon of a favourite button" id="favouriteicon"></button>
+                <button type="button" id="showFav">Use Favourite</button>
+             </section>
+              <section class="detail-input" aria-label="detail-input">
+                <section class="input-field" aria-label="input-field">
+                  <label for="adults">Number of Adults</label>
+                  <input type="number" name="adults" id="adults"  placeholder="Enter Number of Adults" required value="0" min="0" title="Please Enter Number of Adults">
+                </section>
+  
+                <section class="input-field" aria-label="input-field">
+                  <label for="kids">Kids Above Age 5</label>
+                  <input type="number" name="kids" id="kids" placeholder="Enter Number of Kids above age 5" min="0" value="0" title="Please Enter Number of Kids Above 5 Years Old">
+                </section>
+              </section>
+              <section class="detail-input" aria-label="detail-input">
+                <section class="input-field" aria-label="input-field">
+                  <label for="checkin">Check In</label>
+                  <input type="date" name="checkin" id="checkin" required title="Please Select a Check in Date">
+                </section>
+                <section class="input-field" aria-label="input-field">
+                  <label for="checkout">Check Out</label>
+                  <input type="date" name="checkout" id="checkout" required title="Please Select a  Check out Date">
+                </section>
+                
+              </section>
+  
+              <section class="room-detail-input" aria-label="room-detail-input">
+                <section class="room-input" aria-label="room-input">
+                    <label for="single">Single Rooms</label>
+                    <input type="number" name="rooms" id="single" placeholder="Enter Number of Single Rooms required" min="0" value="0" title="Enter Number of Single Rooms" class="roomtype">
+                </section>
+                <section class="room-input" aria-label="room-input">
+                    <label for="double">Double Rooms</label>
+                    <input type="number" name="rooms" id="double" placeholder="Enter Number of Double Rooms required" min="0" value="0" title="Enter Number of Double Rooms" class="roomtype">
+                </section>
+                <section class="room-input" aria-label="room-input">
+                    <label for="triple">Triple Rooms</label>
+                    <input type="number" name="rooms" id="triple" placeholder="Enter Number of Triple Rooms required" min="0" value="0" title="Enter Number of Triple Rooms" class="roomtype">
+                </section>
+              </section>
+  
+              <section class="detail-input" aria-label="detail-input">
+                <section class="input-field" aria-label="input-field">
+                  <label for="beds">Extra Beds</label>
+                  <input type="number" name="beds" id="beds" placeholder="Enter Number of Extra Beds if required" value="0" max="10" min="0" title="Fill this only if you need extra Beds (Maximum =10)">
+                </section>
+                <section class="input-field" aria-label="input-field">
+                  <label for="promocode">Promo Code</label>
+                  <input type="text" name="promocode" id="promocode" placeholder="Enter PromoCode">
+                </section>
+              </section>
+  
+              <section class="extra-requirements" aria-label="extra-requirements">
+                <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="WiFi">
+                    <section class="extra-req-text" aria-label="extra-req-text">
+                        <span>
+                            WiFi
+                        </span>
+                    </section>
+                </section>
+  
+                <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="Pet-Friendly">
+                    <section class="extra-req-text" aria-label="extra-req-text">
+                        <span>
+                          Pet-Friendly
+                        </span>
+                    </section>
+  
+                </section>
+  
+                <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="Mini-Bar">
+                    <section class="extra-req-text" aria-label="extra-req-text">
+                        <span>
+                          Mini Bar
+                        </span>
+                    </section>
+  
+                </section>
+  
+                <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="A/C">
+                    <section class="extra-req-text" aria-label="extra-req-text">
+                        <span>
+                            A/C
+                        </span>
+                    </section>
+                </section>
+  
+                <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="Spa-Tub">
+                    <section class="extra-req-text" aria-label="extra-req-text">
+                        <span>
+                          Spa Tub
+                        </span>
+                    </section>
+                </section>   
+              </section>
+  
+  
+              <section class="book-button" aria-label="book-button">
+                <button type="submit" id="bookrooms">Book Now</button>
+              </section>
             </form>
-
-            <!-- Adventure Booking Form -->
-            <form action="" id="adventure-form">
-                <div class="form-heading">Adventure Bookings</div>
-
-                <div class="adventure-input">
-                    <div class="person-input">
-                        <label for="localadult">No.of Local Adults</label>
-                        <input type="number" name="localadult" id="localad" placeholder="Enter No.of Local Adults">
-                    </div>
-                    <div class="person-input">
-                        <label for="localkids">No.of Local Children</label>
-                        <input type="number" name="localkids" id="localk" placeholder="Enter No.of Local Kids">
-                    </div>
-                    <div class="person-input">
-                        <label for="foreignadult">No.of Foreign Adults</label>
-                        <input type="number" name="foreignadult" id="foreignad" placeholder="Enter No.of Foreign Adults">
-                    </div>
-                    <div class="person-input">
-                        <label for="foreignkids">No.of Local Children</label>
-                        <input type="number" name="foreignkids" id="foreignk" placeholder="Enter No.of Foreign Kids">
-                    </div>
-                </div>
-
-                <div class="duration">
-                        <label for="hours">Duration</label>
-                        <input type="number" name="hours" id="duration" placeholder="Enter Duration in Hours">
-                </div>
-
-                <h2>Guide Requirements</h2>
-                <div class="guide-requirements">
-                    <div class="guide-requirements-checkboxes">
-                        <input type="checkbox" name="guide" id="adult">
-                        <div class="guide-req-text">
-                            <span>
-                                Adult Guides
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="guide-requirements-checkboxes">
-                        <input type="checkbox" name="guide" id="kidguide">
-                        <div class="guide-req-text">
-                            <span>
-                                Kid's Guide
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-room-button">
-                    <button type="submit" id="bookrooms">Book Adventure</button>
-                </div>
-                <div class="current-booking">
-                    <h1>Current Booking</h1>
-                    <p>Number of Local Adults/p>
-                    <p>Number of Local Kids</p>
-                    <p>Number of Foreign Adults</p>
-                    <p>Number of Foreign Kids</p>
-                    <p>Duration</p>
-                    <p>Guides</p>
-                </div>
+          </section>
+  
+          <section class="current-room-booking-details" aria-label="current-room-booking-details">
+            <section class="current-bookings" aria-label="current-bookings">
+              <section id="current" aria-label="current">
+                <h2>Current Booking</h2>
+              </section>
+            </section>
+          </section>
+      </section>
 
 
-                <div class="book-room-button">
-                    <button type="submit" id="bookrooms">Reserve</button>
-                </div>
-            </form>
 
-        <div class="overallbooking">
+
+      <!-- Adventure Booking Form -->
+      <section id="adventure-booking" aria-label="adventure-booking">
+        <section class="adventure-booking-form-container" aria-label="adventure-booking-form-container">
+          <form action="#" id="adventure-form">
+            <h2>Adventure Booking</h2>
+            <section class="favourite-load-button" aria-label="favourite-load-button">
+              <button type="submit" id="advfavourite"><img src="./icons8-favourite-50.png" alt="icon of favorite button" id="advfavouriteicon"></button>
+              <button type="button" id="advshowFav">Use Favourite</button>
+           </section>
+            <section id="adventure-selection" aria-label="adventure-selection">
+              <h2>Select Adventure</h2>
+            </section>
+            
+            <section class="extra-requirements" aria-label="extra-requirements">
+              <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                  <input type="checkbox" name="adventures" id="Diving">
+                  <section class="extra-req-text" aria-label="extra-req-text">
+                      <span>
+                          Diving
+                      </span>
+                  </section>
+              </section>
+  
+              <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                  <input type="checkbox" name="adventures" id="Hiking">
+                  <section class="extra-req-text" aria-label="extra-req-text">
+                      <span>
+                          Hiking
+                      </span>
+                  </section>
+  
+              </section>
+  
+              <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                  <input type="checkbox" name="adventures" id="Camping">
+                  <section class="extra-req-text" aria-label="extra-req-text">
+                      <span>
+                          Camping
+                      </span>
+                  </section>
+              </section>
+            </section>
+  
+            <section class="detail-input" aria-label="detail-input">
+  
+              <section class="input-field" aria-label="input-field">
+                <label for="localadults">Local Adults</label>
+                <input type="number" name="localadults" id="localadults" placeholder="Enter No.of Local Adults" value="0" min="0">
+              </section>
+              <section class="input-field" aria-label="input-field">
+                <label for="localkids">Local Kids</label>
+                <input type="number" name="localkids" id="localkids" placeholder="Enter No.of Local Kids" value="0" min="0">
+              </section>
+            </section>
+  
+            <section class="detail-input" aria-label="detail-input">
+  
+              <section class="input-field" aria-label="input-field">
+                <label for="foreignadults">Foreign Adults</label>
+                <input type="number" name="foreignadults" id="foreignadults" placeholder="Enter No.of Foreign Adults" value="0" min="0">
+              </section>
+              <section class="input-field" aria-label="input-field">
+                <label for="foreignkids">Foreign Kids</label>
+                <input type="number" name="foreignkids" id="foreignkids" placeholder="Enter No.of Foreign Kids" value="0" min="0">
+              </section>
+            </section>
+  
+            <section class="detail-input" aria-label="detail-input">
+  
+              <section class="input-field" aria-label="input-field">
+                <label for="duration">Duration</label>
+                <input type="number" name="duration" id="duration" required min="0" value="0" placeholder="Enter Duration (Hours)" title="Enter the Duration of the Adventure (Hours)">
+              </section>
+            </section>
+  
+            <section id="guide" aria-label="guide">
+              <h2>Guide Requirements</h2>
+            </section>
+            <section class="extra-requirements" aria-label="extra-requirements">
+              <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                  <input type="checkbox" name="guide" id="Adult-Guide" title="Check this if you need a Guide for Adults during sectioning Sessions">
+                  <section class="extra-req-text" aria-label="extra-req-text">
+                      <span>
+                          Adult Guide
+                      </span>
+                  </section>
+              </section>
+  
+              <section class="extra-requirements-checkboxes" aria-label="extra-requirements-checkboxes">
+                  <input type="checkbox" name="guide" id="Kid's-Guide" title="Check this if you need a Guide for Kids during sectioning Sessions">
+                  <section class="extra-req-text" aria-label="extra-req-text">
+                      <span>
+                          Kid's Guide
+                      </span>
+                  </section>
+  
+              </section>
+            </section>
+  
+            <section class="book-button" aria-label="book-button">
+              <button type="submit" id="bookadventure">Book Adventure</button>
+            </section>
+          </form>
+        </section>
+  
+        <section class="current-adventure-bookings" aria-label="current-adventure-bookings">
+          <section class="current-bookings" aria-label="current-bookings">
+            <section id="adv-bookingdetail" aria-label="adv-bookingdetail">
+              <h2>Current Booking</h2>
+            </section>
+          </section>
+        </section>
+      </section>
+  
+  
+      
+      <!-- Overall Room Booking Table -->
+      <section id="overallbooking" aria-label="overallbooking">
         <h2>Overall Room Booking:</h2>
         <table id="overallRoomBooking">
-            <thead>
-                <tr>
-                    <th>Single Rooms</th>
-                    <th>Double Rooms</th>
-                    <th>Check-in Date</th>
-                    <th>Check-out-Date</th>
-                    <th>No.of Kids</th>
-                    <th>Extra Beds</th>
-                    <th>Extra Requirements</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Single Rooms</th>
+              <th scope="col">Double Rooms</th>
+              <th scope="col">Triple Rooms</th>
+              <th scope="col">Check in Date</th>
+              <th scope="col">Check out Date</th>
+              <th scope="col">No.of Kids</th>
+              <th scope="col">Extra Beds</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
             <tbody></tbody>
          </table>
-        </div>
+        </section>
 
-        <div class="overallbooking">
-            <h2>Overall Room Booking:</h2>
-            <table id="overallAdventureBooking">
-                <thead>
-                    <tr>
-                        <th>Local Adults</th>
-                        <th>Local Kids</th>
-                        <th>Foreign Adults</th>
-                        <th>Foreign Kids</th>
-                        <th>Duration</th>
-                        <th>Adult Guide</th>
-                        <th>Kid's Guide</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-             </table>
-            </div>
-        
-        </div>
-        
+
+
+         
     </section>
+
      <!--Footer-->
      <footer class="footer">
-        <section class="footer-left">
-          <section class="footer-logo">
+        <section class="footer-left" aria-label="footer-left">
+          <section class="footer-logo" aria-label="footer-logo">
             <img src="./download.png" alt="">
           </section>
-          <section class="footer-left-text">
-            <h1>Amaya Hills</h1>
+          <section class="footer-left-text" aria-label="footer-left-text">
+            <h2>Amaya Hills</h2>
             <br>
             <p>Heerassagala, Kandy</p>
             <br>
             <p>Sri Lanka</p>
           </section>
         </section>
-        <section class="footer-icons-container">
-          <section class="footer-icons">
-            <a href="https://www.facebook.com/amayaresorts?_rdc=1&_rdr"><img class="icon" src="./icons8-facebook-50.png" alt="Facebook Icon"></a>
+        <section class="footer-icons-container" aria-label="footer-icons-container">
+          <section class="footer-icons" aria-label="footer-icons">
             <a href="https://www.youtube.com/@AmayaResort"><img class="icon" src="./icons8-youtube-50.png" alt="Youtube Icon"></a>
-            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./Twitter Logo white.png" alt="Twitter Icon"></a>
+            <a href="https://twitter.com/amayahills?lang=en"><img class="icon" src="./TwitterLogowhite.png" alt="Twitter Icon"></a>
             <a href="https://www.instagram.com/amayaresort/"><img class="icon" src="./icons8-instagram-50.png" alt="Instagram Icon"></a>
-            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linked in logo white.png" alt="Linkedin Icon"></a>
+            <a href="https://lk.linkedin.com/company/amaya-resorts-&-spas"><img class="icon" src="./Linkedinlogowhite.png" alt="Linkedin Icon"></a>
           </section>
         </section>
-        <section class="footer-contacts">
-            <p><a href="mailto:reservations@amayaresorts.com" id="email">reservation@amayaresorts.com</a></p>
+        <section class="footer-contacts" aria-label="footer-contacts">
+            <p><a href="mailto:reservations@amayaresorts.com" id="hotelemail">reservation@amayaresorts.com</a></p>
             <br>
             <p>Phone : +94 81 4 474022</p>
         </section>
@@ -336,17 +383,9 @@
             Linkedin Icon :https://icons8.com/
         -->
       </footer>
-    
-</body>
-<script>
-    document.addEventListener ('scroll', () =>{
-        const header = document.querySelector('header');
 
-        if (window.scrollY > 0){
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled')
-        }
-    })
-</script>
+
+    <script src="./main.js"></script>
+
+</body>
 </html>

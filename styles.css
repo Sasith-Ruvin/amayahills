@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300&family=Philosopher:wght@700&display=swap');
+:root{
+    --size:clamp(20px,1.5vw,100px);
+    --family:"Open sans",sans-serif;
+    --font-colors:white;
+    --second-font-color:black;
+    --second-font-size:clamp(20px,1vw,100px);
+    --third-font-size:clamp(20px,0.8vw,100px);
+    --fourth-font-size:clamp(25px,2.5vw,200px);
+    --button-font:clamp(20px,1.5vw,100px);
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -1973,16 +1984,591 @@ table {
     }
 }
 
+                                       /*Booking Page*/
+
+
+#form-container{
+    background: url(./pexels-alex-urezkov-16251530.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.personal-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+#personal-details-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    gap: 10%;
+}
+#roomselection, #adventureselection{
+    color: #000000;
+    background-color: #ddd;
+    padding: 20px 30px;
+    font-size: clamp(20px,1.5vw,100px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+#roomselection:hover{
+    cursor: pointer;
+    background-color: gold;
+    color: #000000;
+    text-transform: uppercase;
+}
+#adventureselection:hover{
+    cursor: pointer;
+    background-color: gold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+.form-containers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5%;
+}
+
+#room-booking{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#adventure-booking{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.adventure-booking-form-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+#adventure-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#adventure-form h2{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    color: white;
+    font-size: clamp(30px,1.5vw,300px);
+}
+
+#adventure-selection{
+    width: 100%;
+    font-size: var(--second-font-size);
+    color: white;
+    font-family: var(--family);
+}
+.room-booking-form-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.current-room-booking-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    border: #000000 solid 1px;
+    height: 90vh;
+}
+.current-bookings{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+    font-weight: bold;
+    background-color: var(--second-font-color);
+    height: 90vh;
+}
+
+
+#current{
+    color: var(--font-colors);
+    padding: 5%;
+    justify-content: center;
+    text-align: justify;
+
+}
+  
+.booking-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.booking-details h2{
+    font-size: var(--size);
+    font-family: var(--family);
+    color: var(--font-colors);
+}
+
+#current h2{
+    text-align: center;
+    font-size: var(--size);
+}
+
+#current p{
+    font-size: var(--size);
+    color: var(--font-colors);
+    font-family: var(--family);
+}
+
+#adv-bookingdetail{
+    color: var(--font-colors);
+    padding: 5%;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+#adv-bookingdetail h2{
+    font-family: var(--family);
+    text-align: center;
+    color: var(--font-colors);
+    font-size: var(--third-font-size);
+}
+#adv-bookingdetail p{
+    font-size: var(--size);
+    color: var(--font-colors);
+    font-family: var(--family);
+
+}
+
+
+.current-adventure-bookings{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    border: #000000 solid 1px;
+}
+#room-bookingform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#room-bookingform h2{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    color: var(--font-colors);
+    font-size: clamp(30px, 1.5vw,100px);
+}
 
 
 
 
+.favourite-loyalty-button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.favourite-load-button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+    margin-top: 3%;
+
+}
+.favourite-load-button #showFav,#advshowFav{
+   border-radius: 10px;
+   font-size: var(--size);
+   font-weight: bold;
+   padding: 1%;
+}
+
+.favourite-load-button #favourite,#favouriteicon,#advfavourite,#advfavouriteicon{
+    border-radius: 20px;
+}
+
+.favourite-loyalty-button #loyalty{
+    border-radius: 10px;
+    font-size: var(--size);
+    font-weight: bold;
+    padding: 1%;
+}
+
+#showFav:hover,#advshowFav:hover,#loyalty:hover{
+    background-color: gold;
+    color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 
+#favourite:hover,#advfavourite:hover{
+    filter: invert(50);
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 
+.detail-input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.room-detail-input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+   justify-content: center;
+}
+.room-input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.roomtype{
+    width: 90%;
+}
+
+label{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: var(--size);
+    color: var(--font-colors);
+    font-family: var(--family);
+}
+
+.extra-requirements{
+    display: flex;
+    column-gap: 1%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+.extra-requirements-checkboxes{
+    position: relative;
+    width: 20%;
+    margin: 5px;
+    float: left;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    text-align: center;
+    color:var(--font-colors);
+    font-weight: bold;
+    font-size: var(--size);
+    font-family: var(--family);
+}
+.extra-requirements-checkboxes input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.extra-requirements-checkboxes input:checked ~ .extra-req-text{
+    background-color:#eaff00e0;
+    color: rgb(0, 0, 0);
+}
+
+.extra-req-text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--third-font-size);
+  transition: .5s ease;
+}
+
+.book-button{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+
+
+#bookrooms{
+    padding: 2%;
+    border-radius: 15px;
+    font-size: var(--button-font);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#bookadventure{
+    padding: 2%;
+    border-radius: 15px;
+    font-size: var(--button-font);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#bookrooms:hover{
+    cursor: pointer;
+    background-color: rgba(255, 217, 0, 0.877);
+    color: #000000;
+    transition: 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+#bookadventure:hover{
+    cursor: pointer;
+    background-color: rgba(255, 217, 0, 0.877);
+    color: #000000;
+    transition: 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+
+input,select{
+    padding: 15px 15px;
+    font-size: clamp(20px,0.5vw,200px);
+    border-radius: 5px;
+}
+
+#overallbooking{
+    padding-top:5%;
+}
+#overallbooking h2{
+    color: var(--font-colors);
+    font-family: var(--family);
+    font-size: var(--fourth-font-size);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-family: var(--family);
+    font-size: var(--size);
+  }
+  
+  
+  table tr {
+    background-color: rgba(255, 255, 255, 0.925);
+    border: 1px solid #000000;
+   
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    border: 1px solid #000000;
+    font-size: var(--third-font-size);
+    font-family: var(--family);
+     background-color: rgba(255, 187, 0, 0.425);
+     font-weight: bold;
+    
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: var(--second-font-size);
+    font-family: var(--family);
+    color: var(--second-font-color);
+    border: 1px solid #000000;
+    background-color: rgba(255, 187, 0, 0.425);
+  }
+  
+
+
+
+  /*Overall Room Booking Table Responsiveness*/
+  @media (max-width: 1250px) {
+    table {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+  
+    table th, table td {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    table thead{
+        width: 50%;
+    }
+    table tbody{
+        width: 50%;
+    }
+    table tr,
+    table th,
+    table td {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+   
+    }
+  }
+
+
+
+  @media(max-width:1250px){
+    .detail-input{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #room-booking{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .room-booking-form-container{
+        width: 100%;
+    }
+    .room-detail-input{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-field{
+        width: 80%;
+    }
+    .extra-requirements{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .room-input{
+        width: 80%;
+    }
+    .booking-details{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .current-room-booking-details{
+        padding: 5%;
+        width: 90%;
+    }
+    #adventure-booking{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .adventure-booking-form-container{
+        width: 100%;
+    }
+    .current-adventure-bookings{
+        width: 80%;
+        margin-top: 5%;
+    }
+    .form-buttons{
+        flex-direction: column;
+
+    }
+    #adventureselection{
+        margin-top: 5%;
+    }
+    #bookrooms,#bookadventure{
+        width: 80%;
+    }
+    .favourite-loyalty-button{
+        flex-direction: column;
+        width: 80%;
+      
+    }
+    .favourite-loyalty-button #loyalty,#showFav{
+        margin-top: 5%;
+    }
+    .favourite-load-button{
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+  }
 
                                                 /*Footer Design*/
 
